@@ -27,8 +27,23 @@ body {
 }
 
 h1 {
+    padding: 20px;
     color: var(--grayish-blue);
     text-align: center;
+}
+
+small {
+    position: relative;
+    font-size:35px;
+    padding: 2px;
+    bottom: 5px;
+}
+
+.toggler-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 30px;
 }
 
 .toggler-container  p {
@@ -39,19 +54,88 @@ h1 {
     color: var(--grayish-blue);
 }
 
+.card span {
+    color: var(--dark-grayish-blue);
+    font-size: 54px;
+}
+
+.center-card h3, .center-card span {
+    color: white;
+}
+
 .card ul {
     color: var(--grayish-blue);
     list-style: none;
+    padding: 20px;
 }
 
-.card span {
-    color: var(--dark-grayish-blue);
+.card.center-card ul {
+    color: white;
+    padding: 20px;
+}
+
+.card li {
+    padding: 15px 35px;
+    border-top: 1px grey solid;
+}
+
+.card.center-card li {
+    padding: 15px 35px;
+    border-top: 1px white solid;
+}
+
+.bottom-li {
+    border-bottom: 1px grey solid;
+}
+
+#bottom-li-center {
+    border-bottom: 1px white solid;
 }
 
 .btn {
+    font-weight: 700;
+    padding: 6px;
+    display: inline-block;
+    width: 100%;
     text-align: center;
     text-transform: uppercase;
     background-image: var(--linear-gradient);
     border: none;
+    border-radius: 5px;
     color: white;
+}
+
+.btn.btn-center {
+    color: var(--dark-grayish-blue);
+    background-image: none;
+    background-color: white;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    box-shadow: 0 0 10px var(--dark-grayish-blue);
+    border-radius: 5px;
+}
+
+.left-card {
+    position: relative;
+    background-color: white;
+    left: 10px;
+}
+
+.center-card {
+    background-image: var(--linear-gradient);
+    z-index: 2;
+}
+
+.right-card {
+    position: relative;
+    background-color: white;
+    right: 10px;
 }
