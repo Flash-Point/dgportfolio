@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+    --linear-gradient : linear-gradient(to right, hsl(236, 72%, 79%),hsl(237, 63%, 64%));
+    --very-light-grayish-blue : hsl(234, 14%, 74%);
+    --light-grayish-blue : hsl(234, 14%, 74%);
+    --grayish-blue : hsl(233, 13%, 49%);
+    --dark-grayish-blue : hsl(232, 13%, 33%);
+    --document-font : 'Montserrat', sans-serif;
+    --document-font-size : 15px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--linear-gradient);
+    background-image: url(../images/bg-top.svg), url(../images/bg-bottom.svg);
+    background-position: right top, left bottom;
+    background-repeat: no-repeat, no-repeat;
+    height: 100vh;
+    font-family: var(--document-font);
+    font-size: var(--document-font-size);
+}
+
+#main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    padding-top: 20px;
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+small {
+    position: relative;
+    font-size:35px;
+    padding: 2px;
+    bottom: 5px;
+}
+
+.toggler-container {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.toggler {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.toggler-container  p {
+    margin-top: 5px;
+    color: var(--light-grayish-blue);
+}
+
+.card h3 {
+    color: var(--grayish-blue);
+}
+
+.card span {
+    color: var(--dark-grayish-blue);
+    font-size: 54px;
+}
+
+.center-card h3, .center-card span {
+    color: white;
+}
+
+.card ul {
+    color: var(--grayish-blue);
+    list-style: none;
+    padding: 20px;
+}
+
+.card.center-card ul {
+    color: white;
+    padding: 20px;
+}
+
+.card li {
+    padding: 15px 35px;
+    border-top: 1px grey solid;
+}
+
+.card.center-card li {
+    padding: 15px 35px;
+    border-top: 1px white solid;
+}
+
+.bottom-li {
+    border-bottom: 1px grey solid;
+}
+
+#bottom-li-center {
+    border-bottom: 1px white solid;
+}
+
+.btn {
+    font-weight: 700;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-image: var(--linear-gradient);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: none;
+    background-color: white;
+    color: var(--dark-grayish-blue);
+    border:hsl(232, 13%, 33%) 0.5px solid;
+}
+
+.btn.btn-center {
+    color: var(--dark-grayish-blue);
+    background-image: none;
+    background-color: white;
+}
+
+.btn.btn-center:hover {
+    color: white;
+    border:white 0.5px solid;
+    background-image: var(--linear-gradient);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    padding: 20px;
+    box-shadow: 0 0 10px var(--dark-grayish-blue);
+    border-radius: 5px;
+}
+
+.left-card {
+    position: relative;
+    background-color: white;
+    left: 10px;
+    height: 350px;
+}
+
+.center-card {
+    position: relative;
+    bottom: 25px;
+    padding-top: 45px;
+    background-image: var(--linear-gradient);
+    z-index: 2;
+    height: 400px;
+}
+
+.right-card {
+    position: relative;
+    background-color: white;
+    right: 10px;
+    height: 350px;
+}
+
+/*TOGGLER CSS RULES*/
+/*///////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////*/
+
+/* The switch - the box around the slider */
+.toggler {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .toggler input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .toggler-round {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: var(--linear-gradient);
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .toggler-round:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .toggler-round {
+    background-color: hsl(237, 63%, 64%);
+  }
+  
+  input:hover + .toggler-round {
+    box-shadow: 0 0 5px hsl(237, 63%, 64%);
+  }
+  
+  input:checked + .toggler-round:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .toggler-round {
+    border-radius: 34px;
+  }
+  
+  .toggler-round:before {
+    border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 768px) {
+
+    #main {
+        position: relative;
+        height: 100vh;
+    }
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+        gap: 20px;
+    }
+    .left-card {
+        background-color: white;
+        left: 0;
+    }
+    
+    .center-card {
+        bottom: 0;
+        padding-top: 45px;
+        background-image: var(--linear-gradient);
+        z-index: 0;
+    }
+    
+    .right-card {
+        background-color: white;
+        right: 0;
+        margin-bottom: 20px;
+    }
+
+  }
