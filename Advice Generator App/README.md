@@ -27,10 +27,10 @@ Users should be able to:
 ### Screenshot
 
 - Desktop Screenshot
-![](../advice-generator-app/AA%20Screenshots/desktop.PNG)
+![](../advice-generator-app/AA-screenshots/desktop.PNG)
 
 - Mobile Screenshot
-![](../advice-generator-app/AA%20Screenshots/mobile.PNG)
+![](../advice-generator-app/AA-screenshots/mobile.PNG)
 
 ## My process
 
