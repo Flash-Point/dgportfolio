@@ -44,6 +44,11 @@ small {
     font-size:35px;
     padding: 2px;
     bottom: 5px;
+    color: var(--dark-grayish-blue);
+}
+
+.card.center-card small {
+    color: white;
 }
 
 .toggler-container {
