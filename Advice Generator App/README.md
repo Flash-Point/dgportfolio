@@ -26,11 +26,9 @@ Users should be able to:
 
 ### Screenshot
 
-- Desktop Screenshot
-![](../advice-generator-app/AA-screenshots/desktop.PNG)
+![](/AA-screenshots/desktop.PNG)
 
-- Mobile Screenshot
-![](../advice-generator-app/AA-screenshots/mobile.PNG)
+![](/AA-screenshots/mobile.PNG)
 
 ## My process
 
