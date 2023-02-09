@@ -1,44 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Tip calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+  <title>Tip calculator app</title>
 </head>
+
 <body>
-
-  Bill
-
-  Select Tip %
-  5%
-  10%
-  15%
-  25%
-  50%
-  Custom
-
-  Number of People
-
-  Tip Amount
-  / person
-
-  Total
-  / person
-
-  Reset
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div id="main">
+    <div id="panel-one">
+      <div class="container">
+        <span>Bill</span>
+        <input type="text" name="bill" id="bill" placeholder="$">
+      </div>
+      <div class="container">
+        <span>Select Tip %</span>
+        <div class="buttons">
+          <button class="button">5%</button>
+          <button class="button">10%</button>
+          <button class="button">15%</button>
+          <button class="button">25%</button>
+          <button class="button">50%</button>
+          <input type="text" name="custom-percentage-input" id="custom-input" placeholder="custom">
+        </div>
+      </div>
+      <div class="container">
+        <span>Number of People</span>
+        <input type="text" name="number-of-people" id="number-of-people" placeholder="Number of people">
+      </div>
+    </div>
+    <div id="panel-two">
+      <div class="container">
+        <div class="sub-container">
+          <div class="textbox">
+            <span>Tip Amount</span>
+            <span>/ person</span>
+          </div>
+          <div class="display">
+            <span>$0.00</span>
+          </div>
+        </div>
+        <div class="sub-container">
+          <div class="textbox">
+            <span>Tip Amount</span>
+            <span>/ person</span>
+          </div>
+          <div class="display">
+            <span>$0.00</span>
+          </div>
+        </div>
+      </div>
+      <div class="sub-container">
+        <button id="reset-button">reset</button>
+      </div>
+    </div>
   </div>
+  </div>
+
+  <script src="./js/app.js" type="text/javascript"></script>
 </body>
+
 </html>
