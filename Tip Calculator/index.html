@@ -11,25 +11,28 @@
 </head>
 
 <body>
+  <header>
+    <h1>spli<br>tter</h1>
+  </header>
   <div id="main">
     <div id="panel-one">
       <div class="container">
-        <span>Bill</span>
+        <label>Bill</label>
         <input type="text" name="bill" id="bill" placeholder="$">
       </div>
       <div class="container">
-        <span>Select Tip %</span>
+        <label>Select Tip %</label>
         <div class="buttons">
-          <button class="button">5%</button>
-          <button class="button">10%</button>
-          <button class="button">15%</button>
-          <button class="button">25%</button>
-          <button class="button">50%</button>
+          <button type="button" class="button">5%</button>
+          <button type="button" class="button">10%</button>
+          <button type="button" class="button">15%</button>
+          <button type="button" class="button">25%</button>
+          <button type="button" class="button">50%</button>
           <input type="text" name="custom-percentage-input" id="custom-input" placeholder="custom">
         </div>
       </div>
       <div class="container">
-        <span>Number of People</span>
+        <label>Number of People</label>
         <input type="text" name="number-of-people" id="number-of-people" placeholder="Number of people">
       </div>
     </div>
@@ -53,9 +56,10 @@
             <span>$0.00</span>
           </div>
         </div>
-      </div>
-      <div class="sub-container">
-        <button id="reset-button">reset</button>
+        <div class="sub-container">
+          <button type="button" id="submit-button">submit</button>
+          <button type="button" id="reset-button">reset</button>
+        </div>
       </div>
     </div>
   </div>
