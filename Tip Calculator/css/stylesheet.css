@@ -18,15 +18,124 @@
     font-family: var(--space-mono);
 }
 
+body {
+    background-color: var(--light-grayish-cyan);
+}
+
 header {
     text-transform: uppercase;
     text-align: center;
     color: var(--dark-grayish-cyan);
+    padding-top: 50px;
+}
+
+#main {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    min-width: 40%;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px 2px grey;
+}
+
+#panel-one, #panel-two {
+    min-width: 50%;
+}
+
+.container {
+    max-width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .container label {
     display: block;
     font-size: var(--form-input-size);
     color: var(--grayish-cyan);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
+
+#panel-one #bill {
+    border-radius: 5px;
+    border: solid 1px transparent;
+    background-color: var(--very-light-grayish-cyan);
+    padding: 10px;
+    background-image: url(..//images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    direction: rtl;
+}
+
+#panel-one #bill::placeholder {
+    text-align: right;
+    color: lightgray;
+}
+
+#panel-one .buttons {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 0.5fr));
+    gap: 10px;
+}
+
+#panel-one .button {
+    padding: 5px 10px;
+    background-color: var(--very-dark-cyan);
+    border: solid 1px transparent;
+    border-radius: 5px;
+    color: var(--white);
+}
+
+#panel-one #custom-input {
+    border-radius: 5px;
+    border: solid 1px transparent;
+    background-color: var(--very-light-grayish-cyan);
+    padding-left: 5px;
+}
+
+#panel-one #number-of-people {
+    border-radius: 5px;
+    border: solid 1px transparent;
+    background-color: var(--very-light-grayish-cyan);
+    padding: 10px;
+    background-image: url(..//images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position-x: 10px;
+    direction: rtl;
+}
+
+#panel-one #number-of-people::placeholder {
+    text-align: right;
+    color: lightgray;
+}
+
+#panel-two {
+    background-color: var(--very-dark-cyan);
+    padding: 5px 30px;
+    border-radius: 10px;
+}
+
+#panel-two .sub-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+#panel-two .sub-container span {
+    display: block;
+}
+
+#panel-two .sub-container-controls {
+    
+}
+
+
 
