@@ -18,7 +18,7 @@
     <div id="panel-one">
       <div class="container">
         <label>Bill</label>
-        <input type="text" name="bill" id="bill" placeholder="0" size="36">
+        <input type="text" inputmode="numeric" name="bill" id="bill" placeholder="0">
       </div>
       <div class="container">
         <label>Select Tip %</label>
@@ -28,37 +28,37 @@
           <button type="button" class="button">15%</button>
           <button type="button" class="button">25%</button>
           <button type="button" class="button">50%</button>
-          <input type="text" name="custom-percentage-input" id="custom-input" placeholder="Custom">
+          <input type="text" inputmode="numeric" name="custom-percentage-input" id="custom-input" placeholder="Custom">
         </div>
       </div>
       <div class="container">
         <label>Number of People</label>
-        <input type="text" name="number-of-people" id="number-of-people" placeholder="0" size="36">
+        <input type="text" inputmode="numeric" name="number-of-people" id="number-of-people" placeholder="1">
       </div>
     </div>
     <div id="panel-two">
       <div class="container">
         <div class="sub-container">
           <div class="textbox">
-            <span>Tip Amount</span>
-            <span>/ person</span>
+            <span class="tip-amount">Total Amount</span>
+            <span class="per-person">/ person</span>
           </div>
           <div class="display">
-            <span>$0.00</span>
+            <span class="calc-values" id="total-per-person">$0.00</span>
           </div>
         </div>
         <div class="sub-container">
           <div class="textbox">
-            <span>Tip Amount</span>
-            <span>/ person</span>
+            <span class="tip-amount">Tip Amount</span>
+            <span class="per-person">/ person</span>
           </div>
           <div class="display">
-            <span>$0.00</span>
+            <span class="calc-values" id="tip-per-person">$0.00</span>
           </div>
         </div>
         <div class="sub-container-controls">
-          <button type="button" id="submit-button">submit</button>
-          <button type="button" id="reset-button">reset</button>
+          <button type="button" id="calculate-button">Calculate</button>
+          <button type="button" id="reset-button">Reset</button>
         </div>
       </div>
     </div>
