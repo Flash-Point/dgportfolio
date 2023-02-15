@@ -31,9 +31,9 @@ header {
 
 #main {
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -50%);
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -71,11 +71,16 @@ header {
     background-position: left;
     background-position-x: 10px;
     direction: rtl;
+    width: 100%;
 }
 
 #panel-one #bill::placeholder {
     text-align: right;
     color: lightgray;
+}
+
+#panel-one #bill:hover {
+    cursor: pointer;
 }
 
 #panel-one .buttons {
@@ -92,11 +97,21 @@ header {
     color: var(--white);
 }
 
+#panel-one .button:hover {
+    cursor: pointer;
+    color: var(--very-dark-cyan);
+    background-color: var(--light-grayish-cyan);
+}
+
 #panel-one #custom-input {
     border-radius: 5px;
     border: solid 1px transparent;
     background-color: var(--very-light-grayish-cyan);
     padding-left: 5px;
+}
+
+#panel-one #custom-input:hover {
+    cursor: pointer;
 }
 
 #panel-one #number-of-people {
@@ -109,6 +124,7 @@ header {
     background-position: left;
     background-position-x: 10px;
     direction: rtl;
+    width: 100%;
 }
 
 #panel-one #number-of-people::placeholder {
@@ -116,7 +132,15 @@ header {
     color: lightgray;
 }
 
+#panel-one #number-of-people:hover {
+    cursor: pointer;
+}
+
 #panel-two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
     background-color: var(--very-dark-cyan);
     padding: 5px 30px;
     border-radius: 10px;
@@ -132,9 +156,63 @@ header {
 #panel-two .sub-container span {
     display: block;
 }
+#panel-two .tip-amount {
+    color: var(--white);
+}
+#panel-two .per-person {
+    color: grey;
+    font-size: 13px;
+}
+#panel-two .calc-values{
+    color: var(--prim-strong-cyan);
+    font-size: 35px;
+}
 
 #panel-two .sub-container-controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 100px;
+}
+
+#panel-two #calculate-button, #panel-two #reset-button {
+    color: var(--very-dark-cyan);
+    background-color: var(--prim-strong-cyan);
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+    width: 110%;
+}
+
+#panel-two #calculate-button:hover, #panel-two #reset-button:hover {
+    cursor: pointer;
+    color: var(--very-dark-cyan);
+    background-color: var(--light-grayish-cyan);
+}
+
+@media (max-width: 1160px) {
     
+    #panel-two .tip-amount {
+        font-size: 13px;
+    }
+    #panel-two .per-person {
+        font-size: 10px;
+    }
+    
+    #panel-two .calc-values{
+        font-size: 20px;
+    }
+    
+    .container label {
+        font-size: 15px;
+    }
+    
+    #main {
+        flex-direction: column;
+        top: 70%;
+    }
+
 }
 
 
