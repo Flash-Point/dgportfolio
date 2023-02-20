@@ -103,6 +103,10 @@ header {
     background-color: var(--light-grayish-cyan);
 }
 
+#panel-one .button:focus {
+    background-color: var(--prim-strong-cyan);
+}
+
 #panel-one #custom-input {
     border-radius: 5px;
     border: solid 1px transparent;
